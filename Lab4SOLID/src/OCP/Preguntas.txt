@@ -1,0 +1,12 @@
+1) Te solicitan que extiendas tu servicio de autenticación, para que tambien te puedas
+autenticar con el servicio de Apple. ¿Qué cambios deberias realizar en la clase
+AuthService para que cumpliese el Principio OCP?. Justifica tu respuesta
+
+>> Lo primero a realizar ha sido una interfaz que contenga el método genérico para poder iniciar sesión. A continuación, 
+   hemos creado las clases correspondientes a cada tipo de autentificación. Hemos simplificado la clase AuthService para que utilize la interfaz y
+   por último hemos creado una clase main que compruebe lo desarrollado.
+   
+   
+2) ¿Consideras que el cambio que has realizado es una refactorización? Justifica la respuesta.
+
+>> Sí, se ha simplificado el código de AuthService, a una línea de código.
