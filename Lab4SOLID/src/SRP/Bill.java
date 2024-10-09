@@ -10,14 +10,14 @@ public class Bill {
 	public float totalDeduction;
 	public float billTotal;
 	public int deductionPercentage;
+	Deduccion d = new Deduccion();
+	IVA iva = new IVA();
+	float VAT;
 
 	// Método que calcula el total de la factura
 	public void billTotalCalc() {
-		// Calculamos la deducción
-		totalDeduction = (InitialAmount * deductionPercentage) / 100;
-		// Calculamos el IVA
-		totalVAT = (float) (InitialAmount * 0.16);
-		// Calculamos el total
-		billTotal = (InitialAmount - totalDeduction) + totalVAT;
+		
+		billTotal = (InitialAmount - d.calculateDeduction(InitialAmount, deductionPercentage)) + 
+				iva.calculateVAT(InitialAmount, VAT);
 	}
 }
