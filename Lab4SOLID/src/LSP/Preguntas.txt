@@ -1,0 +1,13 @@
+1- ¿Cómo rediseñarías la aplicación, para que se cumpliese el principio de Liskov?
+
+>> Por un lado, quitar el método startEngine() y el atributo de tipo Engine de la clase TransportationDevice y llevarlos
+   a una Interface llamada EnginedDevice. Con eso conseguimos que solo los vehículos con motor tengan la posibilidad
+   de interactuar con ellos. *UML_SOLID.pdf*
+
+2- Los Coches(Car) tienen motor y además tienen matricula y el método matricular, sin embargo, los patinetes (Skate)
+   tienen motor pero no matricula. Algo similar pasa con los vehiculos sin motor: las bicicletas(Bike) no tienen
+   matricula pero los remolques(Trailer) sí. ¿Cómo modelarías esta situación?
+   
+>> Primero hemos creado la Interface Matriculado y dentro el método matricular() para los vehículos que requieren
+   matriculación. Después hemos creado las clases Skate y Trailer y hemos implementado los métodos requeridos en cada
+   clase, además de modificar la clase Car para que pueda ser considerado un vehículo con matrícula. *UML_SOLID_2.pdf*
