@@ -1,0 +1,4 @@
+1. No cumple DIP porque la clase Bill depende directamente de las clases VAT y Deduction, que son las
+clases que contienen la implementación correspondiente. En vez de ser Bill la clase que depende de las
+implementaciones, deberían ser las implementaciones las que dependan de interfaces; uniendo Bill con
+las interfaces en vez de las implementaciones.
