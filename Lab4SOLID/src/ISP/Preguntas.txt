@@ -1,0 +1,14 @@
+1) Indica qué información necesitan las clases EmailSender y SMSSender de la clase
+Contact para realizar su tarea, y qué información recogen. 
+
+>> Ambas clases necesitan de los getter's de la clase Contact. Ambas recogen un objeto de tipo Contact y un mensaje de tipo String.
+
+2) Justifica porque incumplen el principio ISP.
+
+>> Pues que entre las clases EmailSender y SMSSender se estan mezclando dos responsabilidades.
+
+	-> Acceder a la información de un objeto de tipo contacto.
+	
+	-> Enviar el mensaje.
+	
+3) 
