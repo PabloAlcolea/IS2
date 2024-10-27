@@ -98,7 +98,7 @@ public class Covid19Pacient {
 	    List<String> impact3 = Arrays.asList("disnea", "dolor de garganta", "cefalea","mialgia","escalofrios");
 	    List<Double> index3 = Arrays.asList(18.6, 13.9, 13.6, 14.8, 11.4);
 	    List<String> impact1 = Arrays.asList("nauseas", "vómitos", "congestión nasal","diarrea","hemoptisis","congestion conjuntival");
-	    List<Double> index1 = Arrays.asList(5.0, 4.8, 3.7, 0.9, 0.8);
+	    List<Double> index1 = Arrays.asList(5.0, 4.8, 3.7, 0.9, 0.8, 0.9);
 	    
 	    List<String> digestiveSymptom=Arrays.asList("nauseas", "vómitos","diarrea");
 	    List<String> neuroMuscularSymptom=Arrays.asList("fiebre", "astenia", "cefalea", "mialgia","escalofrios");
