@@ -7,19 +7,10 @@ import java.util.List;
 
 import domain.Symptom;
 
-public class ComparatorBySymptomName implements IComparator{
+public class ComparatorBySymptomName implements Comparator<Symptom>{
 
 	@Override
-	public Iterator<Symptom> ordenar(Iterator<Symptom> l) {
-		List<Symptom> symptomList = new ArrayList<Symptom>();
-		
-		while (l.hasNext()) {
-			Symptom s = (Symptom) l.next();
-			symptomList.add(s);
-		}
-		
-		symptomList.sort(Comparator.comparing(Symptom :: getName));
-		
-		return symptomList.iterator();
+	public int compare(Symptom s1, Symptom s2) {
+		return s1.getName().compareTo(s2.getName());
 	}
 }

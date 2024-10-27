@@ -7,19 +7,10 @@ import java.util.List;
 
 import domain.Symptom;
 
-public class ComparatorBySeverityIndex implements IComparator {
+public class ComparatorBySeverityIndex implements Comparator<Symptom>{
 
 	@Override
-	public Iterator<Symptom> ordenar(Iterator<Symptom> l) {
-		List<Symptom> symptomList = new ArrayList<Symptom>();
-		
-		while (l.hasNext()) {
-			Symptom s = (Symptom) l.next();
-			symptomList.add(s);
-		}
-		
-		symptomList.sort(Comparator.comparing(Symptom :: getSeverityIndex));
-		
-		return symptomList.iterator();
+	public int compare(Symptom s1, Symptom s2) {
+		return Integer.compare(s1.getSeverityIndex(), s2.getSeverityIndex());
 	}
 }
