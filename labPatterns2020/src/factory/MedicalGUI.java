@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import domain.Medicament;
+import factory.Medicament;
 import domain.Symptom;
 
 import javax.swing.JLabel;
