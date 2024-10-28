@@ -38,7 +38,7 @@ public class Main {
 		count = 0;
 		
 		while(sortInd.hasNext() && count < 5) {
-			Symptom s = (Symptom) sortName.next();
+			Symptom s = (Symptom) sortInd.next();
 			System.out.println(s.getName() + " - Severidad: " + s.getSeverityIndex() + "\n");
 			count++;
 		}
