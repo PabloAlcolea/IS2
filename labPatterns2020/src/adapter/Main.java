@@ -32,8 +32,8 @@ public class Main {
 		
 		invertedIterator.goLast();
 		
-		
-		System.out.println("\n Síntomas ordenados por índice de severidad: \n");
+		System.out.println("\n");
+		System.out.println("Síntomas ordenados por índice de severidad: \n");
 		Iterator<Object> sortInd = Sorting.sortedIterator(invertedIterator, new ComparatorBySeverityIndex());
 		count = 0;
 		
@@ -44,3 +44,4 @@ public class Main {
 		}
 	}
 }
+
